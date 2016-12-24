@@ -1,0 +1,41 @@
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+
+#gallery {
+	margin: 0 auto;
+	position: relative;
+	@imgWidth: 164px;
+	@imgHeight: 294px;
+	.wrapper {
+		width: @imgWidth;
+		height: @imgHeight;
+		margin: 20px auto;
+		overflow: hidden;
+		.items {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			.item {
+				width: @imgWidth;
+				height: @imgHeight;
+				background-size: cover;
+				float: left;
+			}
+		}
+	}
+	.controller {
+		position: absolute;
+		margin-top: @imgHeight;
+		left: 10px;
+		text-decoration: none;
+		font-size: 22px;
+	}
+	.controller.right {
+		left: auto;
+		right: 10px;
+	}
+}
